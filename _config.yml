@@ -4,22 +4,42 @@ title : attetta
 
 description : learning to code + coding to learn
 
+plugins: 
+  - jekyll-mentions
+  - jemoji
+  - jekyll-redirect-from
+  - jekyll-sitemap
+  - jekyll-feed
+  - jekyll-archives
+  - jekyll-extract-element
+
 collections:
-  authors:
-    output: true
+  sets:
+
+jekyll-archives:
+  enabled: ['categories']
 
 defaults:
   - scope:
       path: ""
-      type: "authors"
+      type: "sets"
     values:
-      layout: "author"
+      _hide_content: "true"
   - scope:
       path: ""
       type: "posts"
     values:
       layout: "post"
+      comments: true
   - scope:
       path: ""
     values:
       layout: "default"
+  - scope:
+      path: "index.html"
+    values:
+      body_class: "show_hero_search"
+
+github: [metadata]
+
+encoding: UTF-8
