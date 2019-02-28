@@ -1,3 +1,28 @@
-theme: jekyll-theme-cayman
+# theme: jekyll-theme-cayman
+
 title : attetta
+
 description : learning to code + coding to learn
+
+collections:
+  authors:
+    output: true
+
+defaults:
+  - scope:
+      path: ""
+      type: "authors"
+    values:
+      layout: "author"
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+  - scope:
+      path: ""
+    values:
+      layout: "default"
+
+# github: [metadata]
+      
