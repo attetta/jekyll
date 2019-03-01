@@ -7,6 +7,8 @@ categories:
 description: Iterator, Generator, Decorator
 
 type: Document
+
+technology: python
 ---
 
 How much do you believe in decoration ?

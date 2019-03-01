@@ -1,0 +1,7 @@
+---
+---
+{% assign python = site.posts | where: "technology", "python" | sort: "title" %}
+
+<h2>python <span class="count">({{ python | size }})</span></h2>
+
+{% include listings.html listings=python %}

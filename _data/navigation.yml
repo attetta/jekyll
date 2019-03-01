@@ -1,6 +1,7 @@
+- name: Home
+  link: /
 - name: C++
-  link: /
+  link: /cpp
 - name: Python
-  link: /
-- name: QandA
-  link: /
+  link: /python
+

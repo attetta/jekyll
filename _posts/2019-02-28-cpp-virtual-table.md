@@ -5,6 +5,7 @@ categories:
   - OOAD
 description: virtual table and virtual pointer
 type: Document
+technology: cpp
 ---
 
 What's all the fuss about vtable & vptr

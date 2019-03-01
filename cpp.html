@@ -1,0 +1,7 @@
+---
+---
+{% assign cpp = site.posts | where: "technology", "cpp" | sort: "title" %}
+
+<h2>cpp <span class="count">({{ cpp | size }})</span></h2>
+
+{% include listings.html listings=cpp %}
