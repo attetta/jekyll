@@ -9,3 +9,9 @@ technology: cpp
 ---
 
 A promise gets fulfilled in the future
+
+```cpp
+
+std::future
+std::promise
+```
