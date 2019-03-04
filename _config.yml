@@ -1,22 +1,39 @@
-theme: jekyll-theme-cayman
-
 title : attetta
+url: 
+baseurl: 
+google_analytics_key:
+disqus_shortname:
+newsletter_action:
 
-description : learning to code + coding to learn
+# Values for the jekyll-seo-tag gem (https://github.com/jekyll/jekyll-seo-tag)
+# logo: /siteicon.png
+# description : learning to code + coding to learn
+# author:
+#   name:
+#   email:
+#   twitter: # twitter username without the @ symbol
+# social:
+#   name: 
+#   links:
+#     - https://github.com/CloudCannon/base-jekyll-template
+
+permalink: /:categories/:title/
 
 plugins: 
-  - jekyll-mentions
-  - jemoji
-  - jekyll-redirect-from
+  - jekyll-extract-element
   - jekyll-sitemap
+  - jekyll-seo-tag
   - jekyll-feed
   - jekyll-archives
-  - jekyll-extract-element
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - LICENCE
 
 collections:
   sets:
-
-permalink: /:categories/:title/
 
 jekyll-archives:
   enabled: ['categories']
@@ -24,24 +41,27 @@ jekyll-archives:
 defaults:
   - scope:
       path: ""
-      type: "sets"
     values:
-      _hide_content: "true"
+      layout: "default"
+
   - scope:
       path: ""
       type: "posts"
     values:
       layout: "post"
       comments: true
+
   - scope:
       path: ""
+      type: "sets"
     values:
-      layout: "default"
+      _hide_content: "true"
+
   - scope:
       path: "index.html"
     values:
       body_class: "show_hero_search"
 
-github: [metadata]
+github: [metadata] # GitHub Metadata: No GitHub API authentication could be found. Some fields may be missing or have incorrect data.
 
 encoding: UTF-8

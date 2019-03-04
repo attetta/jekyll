@@ -2,7 +2,7 @@
 date: 2019-02-28
 title: Promise and Future
 categories:
-  - OOAD
+  - object-oriented
 description: std::promise & std::future 
 type: Document
 technology: cpp

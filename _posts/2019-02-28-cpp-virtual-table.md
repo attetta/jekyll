@@ -2,7 +2,7 @@
 date: 2019-02-28
 title: Virtual Table
 categories:
-  - OOAD
+  - object-oriented
 description: virtual table and virtual pointer
 type: Document
 technology: cpp

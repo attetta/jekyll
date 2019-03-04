@@ -2,7 +2,7 @@
 date: 2019-02-28
 title: Decorator
 categories:
-  - Functional
+  - sample app
 
 description: Iterator, Generator, Decorator
 
